@@ -8,7 +8,9 @@ public static class AppData
     public static ObservableCollection<Salida> Salidas { get; } = new()
     {
         new Salida { TipoDocumento = "RUC", NumeroDocumento = "20111111111", Peso = 8500, TipoAuto = "Camión", NombreTransportista = "Transportes Lima SAC", FechaYHora = new DateTime(2026, 9, 3, 10, 30, 0), PesoIngreso = 12000, PesoSalida = 8500 },
-        new Salida { TipoDocumento = "RUC", NumeroDocumento = "20222222222", Peso = 6200, TipoAuto = "Tráiler", NombreTransportista = "Carga Express", FechaYHora = new DateTime(2026, 9, 3, 11, 0, 0), PesoIngreso = 10000, PesoSalida = 6200 }
+        new Salida { TipoDocumento = "RUC", NumeroDocumento = "20222222222", Peso = 6200, TipoAuto = "Tráiler", NombreTransportista = "Carga Express", FechaYHora = new DateTime(2026, 9, 3, 11, 0, 0), PesoIngreso = 10000, PesoSalida = 6200 },
+        new Salida { TipoDocumento = "DNI", NumeroDocumento = "45678901", Peso = 7500, TipoAuto = "Camión", NombreTransportista = "Transportes Rojas", FechaYHora = new DateTime(2026, 9, 2, 9, 15, 0), PesoIngreso = 11000, PesoSalida = 7500 },
+        new Salida { TipoDocumento = "DNI", NumeroDocumento = "76543210", Peso = 500, TipoAuto = "Motocicleta", NombreTransportista = "Transportes Perú", FechaYHora = new DateTime(2026, 9, 1, 8, 0, 0), PesoIngreso = 700, PesoSalida = 500 }
     };
 
     public static ObservableCollection<Camion> Camiones { get; } = new()

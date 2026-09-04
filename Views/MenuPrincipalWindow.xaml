@@ -7,7 +7,10 @@
           <TextBlock Text="SISTEMA DE CONTROL DE PESAJE" Foreground="White" FontSize="21" FontWeight="Bold"/>
           <TextBlock Text="  |  Men&#xFA; principal" Foreground="#CBD5E1" FontSize="15" VerticalAlignment="Center"/>
         </StackPanel>
-        <Button DockPanel.Dock="Right" Content="Cerrar sesi&#xF3;n" Style="{StaticResource BotonSecundario}" VerticalAlignment="Center" Click="CerrarSesion_Click"/>
+        <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" VerticalAlignment="Center">
+          <Button Content="Inicio" Style="{StaticResource BotonSecundario}" Click="Inicio_Click"/>
+          <Button Content="Cerrar sesi&#xF3;n" Style="{StaticResource BotonSecundario}" Click="CerrarSesion_Click"/>
+        </StackPanel>
       </DockPanel>
     </Border>
     <StackPanel Margin="65,130,65,50">
