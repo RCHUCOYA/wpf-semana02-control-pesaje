@@ -1,29 +1,24 @@
-# WPF_SEMANA02 — Registro de Salidas
+# WPF_SEMANA02 — Sistema de Control de Pesaje
 
-Proyecto académico simple hecho con **C# y WPF**.
+Aplicación académica de escritorio creada exclusivamente con **C# y WPF**. No emplea base de datos, Entity Framework, APIs ni persistencia: los registros viven en memoria mientras la aplicación está abierta.
 
-## Flujo de pantallas
+## Requisitos
 
-```text
-Login (demostrativo, sin validación)
-            ↓
-Formulario de Registro de Salidas
-            ↓
-Listado temporal en DataGrid
-```
+- Visual Studio 2022 con la carga de trabajo **Desarrollo de escritorio de .NET**.
+- .NET 8 SDK.
 
-## Funcionalidad
+## Ejecutar
 
-- El botón **Ingresar** abre directamente el formulario de salidas.
-- Permite registrar tipo y número de documento, pesos, vehículo, transportista, fecha y hora.
-- Valida que se completen los campos y que los pesos sean números.
-- Muestra las salidas registradas en un `DataGrid` mientras el programa está abierto.
-- No usa base de datos, APIs ni Entity Framework.
+1. Abrir `WPF_SEMANA02.csproj` en Visual Studio.
+2. Seleccionar el proyecto como inicio y presionar **F5**.
+3. Usar las credenciales `admin` / `1234`.
 
-## Ejecutar en Windows
+## Flujo para la demostración
 
-1. Instalar Visual Studio Community con **Desarrollo de escritorio de .NET**.
-2. Abrir `WPF_SEMANA02.csproj`.
-3. Presionar **F5**.
+1. Intentar ingresar con credenciales erróneas: muestra la validación solicitada.
+2. Ingresar con `admin` y `1234`.
+3. Abrir **Operaciones → Salidas**, registrar una salida y guardar.
+4. Abrir **Reportes → Salidas**: la salida aparece en el `DataGrid`.
+5. Buscar `Lima`, comprobar coincidencia parcial sin distinguir mayúsculas y usar **Limpiar** para restaurar el listado.
 
-Para visualizar el diseño XAML: abrir una ventana `.xaml` y presionar **Shift + F7** en Visual Studio.
+Incluye registros de prueba para el reporte de salidas y mantenimientos de camiones, transportistas y productos en memoria.
