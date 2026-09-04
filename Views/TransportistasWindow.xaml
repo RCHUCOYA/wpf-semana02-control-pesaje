@@ -1,1 +1,45 @@
-<Window x:Class="WPF_SEMANA02.Views.TransportistasWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Mantenimiento de transportistas" Height="600" Width="760" WindowStartupLocation="CenterOwner"><Grid Margin="35"><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition/></Grid.RowDefinitions><StackPanel><TextBlock Text="Mantenimiento de transportistas" FontSize="28" FontWeight="Bold"/><Grid Margin="0,20,0,0"><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="18"/><ColumnDefinition/><ColumnDefinition Width="18"/><ColumnDefinition/></Grid.ColumnDefinitions><StackPanel><TextBlock Text="Nombre transportista" FontWeight="SemiBold"/><TextBox x:Name="txtNombre"/></StackPanel><StackPanel Grid.Column="2"><TextBlock Text="RUC" FontWeight="SemiBold"/><TextBox x:Name="txtRuc"/></StackPanel><StackPanel Grid.Column="4"><TextBlock Text="Teléfono" FontWeight="SemiBold"/><TextBox x:Name="txtTelefono"/></StackPanel></Grid><StackPanel Orientation="Horizontal"><Button Content="Guardar" Style="{StaticResource BotonPrincipal}" Click="Guardar_Click"/><Button Content="Limpiar" Style="{StaticResource BotonSecundario}" Click="Limpiar_Click"/><Button Content="Volver" Style="{StaticResource BotonSecundario}" Click="Volver_Click"/></StackPanel></StackPanel><DataGrid x:Name="dgTransportistas" Grid.Row="1"><DataGrid.Columns><DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}"/><DataGridTextColumn Header="RUC" Binding="{Binding Ruc}"/><DataGridTextColumn Header="Teléfono" Binding="{Binding Telefono}"/></DataGrid.Columns></DataGrid></Grid></Window>
+<?xml version="1.0"?>
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="WPF_SEMANA02.Views.TransportistasWindow" Title="Mantenimiento de transportistas" Height="600" Width="760" WindowStartupLocation="CenterOwner">
+  <Grid Margin="35">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+    <StackPanel>
+      <TextBlock Text="Mantenimiento de transportistas" FontSize="28" FontWeight="Bold"/>
+      <Grid Margin="0,20,0,0">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition/>
+          <ColumnDefinition Width="18"/>
+          <ColumnDefinition/>
+          <ColumnDefinition Width="18"/>
+          <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+          <TextBlock Text="Nombre transportista" FontWeight="SemiBold"/>
+          <TextBox x:Name="txtNombre"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2">
+          <TextBlock Text="RUC" FontWeight="SemiBold"/>
+          <TextBox x:Name="txtRuc"/>
+        </StackPanel>
+        <StackPanel Grid.Column="4">
+          <TextBlock Text="Tel&#xE9;fono" FontWeight="SemiBold"/>
+          <TextBox x:Name="txtTelefono"/>
+        </StackPanel>
+      </Grid>
+      <StackPanel Orientation="Horizontal">
+        <Button Content="Guardar" Style="{StaticResource BotonPrincipal}" Click="Guardar_Click"/>
+        <Button Content="Limpiar" Style="{StaticResource BotonSecundario}" Click="Limpiar_Click"/>
+        <Button Content="Volver" Style="{StaticResource BotonSecundario}" Click="Volver_Click"/>
+      </StackPanel>
+    </StackPanel>
+    <DataGrid x:Name="dgTransportistas" Grid.Row="1">
+      <DataGrid.Columns>
+        <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}"/>
+        <DataGridTextColumn Header="RUC" Binding="{Binding Ruc}"/>
+        <DataGridTextColumn Header="Tel&#xE9;fono" Binding="{Binding Telefono}"/>
+      </DataGrid.Columns>
+    </DataGrid>
+  </Grid>
+</Window>

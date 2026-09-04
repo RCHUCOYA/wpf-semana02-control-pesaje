@@ -2,12 +2,13 @@
 
 ```text
 LOGIN
-  admin / 1234
+  botón Ingresar (sin validación)
        |
        v
 INICIO (3 botones)
   ├── OPERACIONES
-  │     └── Ingresos: formulario simple
+  │     ├── Ingresos: formulario plantilla
+  │     └── Salidas: formulario funcional
   ├── MANTENIMIENTOS
   │     ├── Conductores
   │     ├── Transportistas

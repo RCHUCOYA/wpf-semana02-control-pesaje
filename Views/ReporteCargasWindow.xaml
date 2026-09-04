@@ -1,1 +1,23 @@
-<Window x:Class="WPF_SEMANA02.Views.ReporteCargasWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Reporte de cargas" Height="520" Width="820" WindowStartupLocation="CenterOwner"><Grid Margin="35"><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition/><RowDefinition Height="Auto"/></Grid.RowDefinitions><StackPanel><TextBlock Text="Reporte de Cargas" FontSize="28" FontWeight="Bold"/><TextBlock Text="Vista informativa con datos de ejemplo." Foreground="#64748B" Margin="0,5,0,0"/></StackPanel><DataGrid x:Name="dgCargas" Grid.Row="1"><DataGrid.Columns><DataGridTextColumn Header="Código" Binding="{Binding Codigo}"/><DataGridTextColumn Header="Producto" Binding="{Binding Producto}"/><DataGridTextColumn Header="Cantidad" Binding="{Binding Cantidad}"/><DataGridTextColumn Header="Estado" Binding="{Binding Estado}"/></DataGrid.Columns></DataGrid><Button Grid.Row="2" HorizontalAlignment="Left" Content="Volver" Style="{StaticResource BotonSecundario}" Click="Volver_Click"/></Grid></Window>
+<?xml version="1.0"?>
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="WPF_SEMANA02.Views.ReporteCargasWindow" Title="Reporte de cargas" Height="520" Width="820" WindowStartupLocation="CenterOwner">
+  <Grid Margin="35">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <StackPanel>
+      <TextBlock Text="Reporte de Cargas" FontSize="28" FontWeight="Bold"/>
+      <TextBlock Text="Vista informativa con datos de ejemplo." Foreground="#64748B" Margin="0,5,0,0"/>
+    </StackPanel>
+    <DataGrid x:Name="dgCargas" Grid.Row="1">
+      <DataGrid.Columns>
+        <DataGridTextColumn Header="C&#xF3;digo" Binding="{Binding Codigo}"/>
+        <DataGridTextColumn Header="Producto" Binding="{Binding Producto}"/>
+        <DataGridTextColumn Header="Cantidad" Binding="{Binding Cantidad}"/>
+        <DataGridTextColumn Header="Estado" Binding="{Binding Estado}"/>
+      </DataGrid.Columns>
+    </DataGrid>
+    <Button Grid.Row="2" HorizontalAlignment="Left" Content="Volver" Style="{StaticResource BotonSecundario}" Click="Volver_Click"/>
+  </Grid>
+</Window>

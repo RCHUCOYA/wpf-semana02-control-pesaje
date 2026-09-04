@@ -11,12 +11,12 @@ Aplicación académica de escritorio creada exclusivamente con **C# y WPF**. No 
 
 1. Abrir `WPF_SEMANA02.csproj` en Visual Studio.
 2. Seleccionar el proyecto como inicio y presionar **F5**.
-3. Usar las credenciales `admin` / `1234`.
+3. Presionar **Ingresar**; el login es demostrativo y no valida credenciales.
 
 ## Flujo para la demostración
 
-1. Intentar ingresar con credenciales erróneas: muestra la validación solicitada.
-2. Ingresar con `admin` y `1234`.
+1. Presionar **Ingresar** en el login demostrativo.
+2. En Inicio, seleccionar uno de los tres módulos: Operaciones, Mantenimientos o Reportes.
 3. Abrir **Operaciones → Salidas**, registrar una salida y guardar.
 4. Abrir **Reportes → Salidas**: la salida aparece en el `DataGrid`.
 5. Buscar `Lima`, comprobar coincidencia parcial sin distinguir mayúsculas y usar **Limpiar** para restaurar el listado.
