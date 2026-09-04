@@ -2,7 +2,7 @@
 
 ```text
 LOGIN
-  botón Ingresar (sin validación)
+  admin / 1234
        |
        v
 INICIO (3 botones)

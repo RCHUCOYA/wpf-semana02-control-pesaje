@@ -15,12 +15,16 @@
     <Border Grid.Column="1" Background="White" Padding="58">
       <StackPanel VerticalAlignment="Center">
         <TextBlock Text="Bienvenido" FontSize="28" FontWeight="Bold" Foreground="#111827"/>
-        <TextBlock Text="Pantalla de acceso al sistema" Foreground="#64748B" Margin="0,5,0,28"/>
+        <TextBlock Text="Ingrese sus credenciales para continuar." Foreground="#64748B" Margin="0,5,0,28"/>
+        <TextBlock Text="Usuario" FontWeight="SemiBold"/>
+        <TextBox x:Name="txtUsuario"/>
+        <TextBlock Text="Contraseña" FontWeight="SemiBold"/>
+        <PasswordBox x:Name="txtContrasena" Padding="9" Margin="0,5,0,20"/>
         <StackPanel Orientation="Horizontal">
           <Button Content="Ingresar" Style="{StaticResource BotonPrincipal}" Click="Ingresar_Click"/>
           <Button Content="Salir" Style="{StaticResource BotonSecundario}" Click="Salir_Click"/>
         </StackPanel>
-        <TextBlock Text="Acceso demostrativo: solo presiona Ingresar." Foreground="#94A3B8" FontSize="12" Margin="4,20,0,0"/>
+        <TextBlock Text="Usuario: admin  ·  Contraseña: 1234" Foreground="#94A3B8" FontSize="12" Margin="4,20,0,0"/>
       </StackPanel>
     </Border>
   </Grid>
