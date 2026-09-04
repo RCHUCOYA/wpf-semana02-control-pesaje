@@ -22,3 +22,5 @@ Aplicación académica de escritorio creada exclusivamente con **C# y WPF**. No 
 5. Buscar `Lima`, comprobar coincidencia parcial sin distinguir mayúsculas y usar **Limpiar** para restaurar el listado.
 
 Incluye registros de prueba para el reporte de salidas y mantenimientos de camiones, transportistas y productos en memoria.
+
+La ventana de **Ingresos** registra: tipo y número de documento, placa, tipo de vehículo, fecha, peso de ingreso, transportista, producto/carga y observación.

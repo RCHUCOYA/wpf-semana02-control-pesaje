@@ -21,6 +21,17 @@ public static class AppData
 
     public static ObservableCollection<Ingreso> Ingresos { get; } = new()
     {
-        new Ingreso { Fecha = DateTime.Today, Peso = 12000, TipoVehiculo = "Camión", Transportista = "Transportes Lima SAC" }
+        new Ingreso
+        {
+            Fecha = DateTime.Today,
+            TipoDocumento = "RUC",
+            NumeroDocumento = "20111111111",
+            Placa = "ABC-123",
+            Peso = 12000,
+            TipoVehiculo = "Camión",
+            Transportista = "Transportes Lima SAC",
+            Producto = "Mineral",
+            Observacion = "Ingreso de prueba"
+        }
     };
 }
